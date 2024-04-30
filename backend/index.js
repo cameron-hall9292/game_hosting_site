@@ -32,11 +32,26 @@ app.get("/redDot", (req, res) => {
   res.sendFile(__dirname + "/games/red_dot.html");
 });
 
+
+app.get("/redDot/image", (req, res) => {
+  res.sendFile(__dirname + "/images/redDot.png");
+});
+
+
+
+
+
 //render snake_clone game
 
 app.get("/snake", (req, res) => {
   res.sendFile(__dirname + "/games/snake_clone.html");
 });
+
+
+app.get("/snake/image", (req, res) => {
+  res.sendFile(__dirname + "/images/snake.png");
+});
+
 
 
 
@@ -55,6 +70,11 @@ app.get("/blackjackcss", (req, res) => {
 app.get("/blackjackjs", (req, res) => {
   res.sendFile(__dirname + "/games/blackJack/blackjack.js");
 });
+
+app.get("/blackjack/image", (req, res) => {
+  res.sendFile(__dirname + "/images/blackJack.png");
+});
+
 
 app.get("/assets/:img", (req, res) => {
 
