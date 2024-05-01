@@ -4,6 +4,8 @@
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+
 
 
 
@@ -32,16 +34,25 @@ let imgUrl = linkUrl + "/image";
 
             </Link> */}
 
-            <Card style={{ width: '18rem', color: "black" }}>
+      
+
+
+        
+
+            <Card style={{ width: '18rem', color: "black" }} bg="dark" text="light">
+                <Card.Header>{name}</Card.Header>
             <Card.Img variant="top" src={imgUrl} />
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text >{description}</Card.Text>
-                <Button variant="primary" href={linkUrl}>play {name}</Button>
+                <Card.Title>
+                    <Button variant="success" href={linkUrl}>play {name}</Button>
+                    </Card.Title>
+                <Card.Text ><details style={{marginTop:"2.5rem"}} open="true"><summary style={{marginBottom:"0.5rem"}}>Game Summary</summary>{description}</details></Card.Text>
+              
+            
             </Card.Body>
             </Card>
 
-    
+        
         {/* </Router> */}
 
     </>

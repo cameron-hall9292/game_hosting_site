@@ -36,29 +36,23 @@ export default function App() {
 
     
   return (
-    <>
+    
+
+<Container style ={{background:"white"}} fluid>
+     
 
     <NavFunc />
 
-    {/* <ExampleCard/> */}
-
-    {/* <BootButton buttonLabel={"bootstrap"} /><br></br> */}
-
-
-    {/* <VariantsExample/> */}
-
-    {/* <Stack direction="horizontal" gap={3}> */}
 
 
 
 
-    <Container fluid>
-
-    <Row>
-        <Col>
 
 
 
+
+
+ 
 
       <CardGroup>
 
@@ -107,19 +101,19 @@ export default function App() {
     
 </CardGroup>
 
-</Col>
 
-</Row>
 
-</Container>
+
+
 
 {/* </Stack> */}
 
+
+
      
+</Container>
     
-    
-    </>
-    
+
   )
   
 }
