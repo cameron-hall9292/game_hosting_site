@@ -36,12 +36,17 @@ export default function App() {
 
     
   return (
+
+    <body style={{ height:"100vh", background:"#191970"}}>
+
+
+<NavFunc />
     
 
-<Container style ={{background:"white"}} fluid>
+<Container style ={{background:"#191970", marginTop:"2.5%"}} fluid="lg">
      
 
-    <NavFunc />
+   
 
 
 
@@ -93,9 +98,8 @@ export default function App() {
     description = {
       `This is a clone of the original Nokia Snake game. The goal of the 
       game is to control a pixelated snake and eat snake food for as 
-      long as you can. As you eat the food, the snake gets bigger. If the snake
-      head collides with its body or the game border, it is gameover. As
-      you eat food, your score increases. `}
+      long as you can. As you consume food, the snake gets bigger and
+      your score increases. If the snake head collides with its body or the game border, it is gameover. `}
  />
 
     
@@ -112,7 +116,7 @@ export default function App() {
 
      
 </Container>
-    
+</body>
 
   )
   

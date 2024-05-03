@@ -7,10 +7,10 @@ import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom"
 
 export default function NavFunc() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary"    >
+    <Navbar expand="lg" className="bg-body-tertiary">
       <Container >
       
-        <Navbar.Brand href="#home">Cam's JS Arcade</Navbar.Brand>
+        <Navbar.Brand href="/">Cam's Arcade</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

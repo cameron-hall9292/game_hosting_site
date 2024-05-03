@@ -39,7 +39,7 @@ let imgUrl = linkUrl + "/image";
 
         
 
-            <Card style={{ width: '18rem', color: "black" }} bg="dark" text="light">
+            <Card bg="dark" text="light">
                 <Card.Header>{name}</Card.Header>
             <Card.Img variant="top" src={imgUrl} />
             <Card.Body>

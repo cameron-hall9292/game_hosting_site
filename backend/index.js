@@ -24,7 +24,21 @@ app.use((req, res, next) => {
 
 app.get("/api/test", (req, res) => {
     res.json("Hello New World!");
+
 });
+
+
+
+//render images to client
+
+app.get("/api/:image", (req, res) => {
+  const image = req.params.image;
+  res.sendFile(__dirname + `/images/${image}`);
+});
+
+
+
+
 
 //render red_dot game
 
