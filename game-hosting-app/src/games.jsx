@@ -21,6 +21,12 @@ let linkUrl = baseUrl + name;
 
 let imgUrl = linkUrl + "/image";
 
+let herokuUrl = "https://game-site-backend-8b940b050080.herokuapp.com/"
+
+let herokuLinkUrl = herokuUrl + name;
+
+let herokuImgUrl = herokuLinkUrl + "/image";
+
 
     return (
         <>
@@ -41,10 +47,10 @@ let imgUrl = linkUrl + "/image";
 
             <Card bg="dark" text="light">
                 <Card.Header>{name}</Card.Header>
-            <Card.Img variant="top" src={imgUrl} />
+            <Card.Img variant="top" src={herokuImgUrl} />
             <Card.Body>
                 <Card.Title>
-                    <Button variant="success" href={linkUrl}>play {name}</Button>
+                    <Button variant="success" href={herokuLinkUrl}>play {name}</Button>
                     </Card.Title>
                 <Card.Text ><details style={{marginTop:"2.5rem"}} open={details}><summary style={{marginBottom:"0.5rem"}}>Game Summary</summary>{description}</details></Card.Text>
               
