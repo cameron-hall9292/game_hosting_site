@@ -829,34 +829,65 @@ let playerMoney = 5000;
 
 let playerBet = 0;
 
+//create function to allow players to bet
+
+
 function bet10(){
 
     playerBet += 10;
+
+    if (playerMoney < playerBet) {
+        alert("SORRY, INSUFFICIENT FUNDS");
+        playerBet -= 10;
+        return
+    }
+
+    else {
+
+ 
     let playersBet = document.getElementById('playerBet');
 
 playersBet.innerHTML = playerBet;
     //playerMoney -= 10;
-
+    }
 }
 
 function bet100(){
 
     playerBet += 100;
+
+    if ( playerMoney < playerBet) {
+        alert("SORRY, INSUFFICIENT FUNDS");
+        playerBet -= 100;
+        return
+    }
+    else {
+
+ 
     let playersBet = document.getElementById('playerBet');
 
 playersBet.innerHTML = playerBet;
     //playerMoney -= 100;
-
+    }
 }
 
 function bet1000(){
 
     playerBet += 1000;
+
+    if (playerMoney < playerBet) {
+        alert("SORRY, INSUFFICIENT FUNDS");
+        playerBet -= 1000;
+        return
+    }
+    else {
+
+    
     let playersBet = document.getElementById('playerBet');
 
 playersBet.innerHTML = playerBet;
     //playerMoney -= 1000;
-
+    }
 }
 
 //create insurance function
