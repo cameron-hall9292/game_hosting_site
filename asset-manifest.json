@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/game_hosting_site/static/css/main.ff02f4b5.css",
+    "main.js": "/game_hosting_site/static/js/main.7b24a486.js",
+    "index.html": "/game_hosting_site/index.html",
+    "main.ff02f4b5.css.map": "/game_hosting_site/static/css/main.ff02f4b5.css.map",
+    "main.7b24a486.js.map": "/game_hosting_site/static/js/main.7b24a486.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff02f4b5.css",
+    "static/js/main.7b24a486.js"
+  ]
+}
