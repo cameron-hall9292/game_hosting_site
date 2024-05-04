@@ -37,6 +37,33 @@ app.get("/api/:image", (req, res) => {
 });
 
 
+//render pong_clone game
+
+
+
+
+app.get("/pong", (req, res) => {
+  res.sendFile(__dirname + "/games/Pong_Clone.html");
+});
+
+
+app.get("/pong/image", (req, res) => {
+  res.sendFile(__dirname + "/images/pong.jpg");
+});
+
+
+
+//get pong game sounds
+
+
+app.get("/pongsounds/:sound", (req, res) => {
+
+  const soundName = req.params.sound;
+
+  res.sendFile(__dirname + `/games/pong_sounds/${soundName}`);
+});
+
+
 
 
 
@@ -48,8 +75,19 @@ app.get("/redDot", (req, res) => {
 
 
 app.get("/redDot/image", (req, res) => {
-  res.sendFile(__dirname + "/images/redDot.png");
+  res.sendFile(__dirname + "/images/red-dot.jpg");
 });
+
+
+//get redDot game sounds
+
+app.get("/redDotsounds/:sound", (req, res) => {
+
+  const soundName = req.params.sound;
+
+  res.sendFile(__dirname + `/games/red_dot_sounds/${soundName}`);
+});
+
 
 
 
@@ -63,7 +101,7 @@ app.get("/snake", (req, res) => {
 
 
 app.get("/snake/image", (req, res) => {
-  res.sendFile(__dirname + "/images/snake.png");
+  res.sendFile(__dirname + "/images/snake.jpg");
 });
 
 
@@ -86,8 +124,12 @@ app.get("/blackjackjs", (req, res) => {
 });
 
 app.get("/blackjack/image", (req, res) => {
-  res.sendFile(__dirname + "/images/blackJack.png");
+  res.sendFile(__dirname + "/images/blackjack-3.png");
 });
+
+
+
+//get blackjack game images
 
 
 app.get("/assets/:img", (req, res) => {

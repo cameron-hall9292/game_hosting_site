@@ -42,16 +42,18 @@ export default function Root(){
      
        
 
-        <body style={{ height:"100vh", background:"#191970"}}>
+        <body style={{ height:"100vh", background:"#191970", color:"white",}}>
 
         <NavFunc  />
 
-        <Container style={{ padding:"20px", marginTop:"5%" }}>
+        <Container style={{ padding:"1%", marginTop:"1%" }}>
+      <Row><h1 style={{textAlign:"center", padding:"2.5%"}}>Home</h1></Row>
       <Row >
-        <Col  ><HomeImage  imageName = {getImage} /></Col>
-        <Col style={{color:"white"  }}>    <p style={{padding:"20px", fontSize:"25px"}} >Welcome to my online arcade,
+        <Col style={{}}><HomeImage imageName = {getImage} /></Col>
+        <Col style={{ }}>    <p style={{padding:"20px", fontSize:"25px"}} >Welcome to my online arcade,
             where you can play 2D games built with Javascript, HTML, and CSS.
            To get started, click the button below and select a game you would like to play.
+           
          </p>
          <Link to={"/Games"}>
          <Button variant="success"  style={{marginLeft:"50%"}}>Games</Button>

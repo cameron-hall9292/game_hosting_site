@@ -37,25 +37,15 @@ export default function App() {
     
   return (
 
-    <body style={{ height:"100vh", background:"#191970"}}>
+    <body style={{ height:"100vh", background:"#191970", color:"white"}}>
 
 
 <NavFunc />
+
     
 
 <Container style ={{background:"#191970", marginTop:"2.5%"}} fluid="lg">
      
-
-   
-
-
-
-
-
-
-
-
-
 
  
 
@@ -72,18 +62,18 @@ export default function App() {
       You can think of this game as a sort of hybrid between the
       two. The goal of this game is to shoot down enemy missles
       before they destroy the city. If all buildings are
-      wiped out before you shoot down the missles, you lose.`}
+      wiped out before you shoot down the missles, it's gameover.`}
      />
 
     < DisplayGames 
 
     name={"blackjack"}
     description = {
-      `This is a Blackjack clone. It was much harder to build than 
+      `Blackjack was much more difficult to build than 
       I originally anticipated. What made it difficult was adding the 
       ability to split hands. I tried to implement all of the Blackjack 
       rules: splitting, insurance, double down, etc. The game plays with
-      a 52 card deck. I read that most U.S. casinos play with six decks 
+      a 52 card deck. I have read that most U.S. casinos play with six decks 
       shuffled together (312 cards). I chose to leave it at 52 to give
       players a better chance of guessing the dealer's hand `}
     
@@ -98,9 +88,20 @@ export default function App() {
     description = {
       `This is a clone of the original Nokia Snake game. The goal of the 
       game is to control a pixelated snake and eat snake food for as 
-      long as you can. As you consume food, the snake gets bigger and
-      your score increases. If the snake head collides with its body or the game border, it is gameover. `}
+      long as you can. If the snake head collides with its body or the game border, 
+      it's gameover. As you consume food, the snake grows,
+      your score increases, and the game gets more difficult. `}
  />
+
+< DisplayGames 
+
+name={"pong"}
+details="true"
+description = {
+  `A clone of the classic 1972 Atari Pong, this was the first game I built with Javascript.
+  It was a tough one to build due to all of the collisions, angles, and math involved, but the 
+  process was enjoyable and I am glad I took the time to reconstruct this classic arcade game. `}
+/>
 
     
 </CardGroup>

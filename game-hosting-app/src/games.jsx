@@ -13,7 +13,7 @@ import Container from 'react-bootstrap/Container';
 import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
 
 
-export default function DisplayGames({name, height = 250, width = 250, description}){
+export default function DisplayGames({name, height = 250, width = 250, description, details}){
 
 let baseUrl = "http://localhost:5500/"
 
@@ -37,7 +37,7 @@ let imgUrl = linkUrl + "/image";
       
 
 
-        
+       
 
             <Card bg="dark" text="light">
                 <Card.Header>{name}</Card.Header>
@@ -46,7 +46,7 @@ let imgUrl = linkUrl + "/image";
                 <Card.Title>
                     <Button variant="success" href={linkUrl}>play {name}</Button>
                     </Card.Title>
-                <Card.Text ><details style={{marginTop:"2.5rem"}} open="true"><summary style={{marginBottom:"0.5rem"}}>Game Summary</summary>{description}</details></Card.Text>
+                <Card.Text ><details style={{marginTop:"2.5rem"}} open={details}><summary style={{marginBottom:"0.5rem"}}>Game Summary</summary>{description}</details></Card.Text>
               
             
             </Card.Body>

@@ -21,12 +21,13 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
+  
   import "./index.css";
   
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root />,
+      element: <App />,
       errorElement: <ErrorPage />
     },
     {
