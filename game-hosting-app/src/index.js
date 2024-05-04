@@ -18,13 +18,13 @@ import About from "./About";
 
 
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider,
   } from "react-router-dom";
   
   import "./index.css";
   
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <App />,

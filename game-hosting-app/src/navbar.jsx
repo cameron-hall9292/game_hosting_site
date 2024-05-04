@@ -10,13 +10,13 @@ export default function NavFunc() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container >
       
-        <Navbar.Brand href="/">Cam's Arcade</Navbar.Brand>
+        <Navbar.Brand href="#/">Cam's Arcade</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             
-            <Nav.Link href="/Games">Games</Nav.Link>
-            <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="#/Games">Games</Nav.Link>
+            <Nav.Link href="#/About">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
        
